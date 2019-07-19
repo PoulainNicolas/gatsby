@@ -3,4 +3,8 @@
 
 ### Linux
 
-### Windows
+### Windows et Mac
+
+Prérequis
+
+Avoir installé node.js
