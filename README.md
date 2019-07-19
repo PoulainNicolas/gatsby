@@ -1,1 +1,6 @@
 # gatsby
+## Installation
+
+### Linux
+
+### Windows
