@@ -1,1 +1,3 @@
 # Gatsby
+## Objetifs
+## Méthodologie
