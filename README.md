@@ -28,6 +28,17 @@ Ouvrez le répertoire ```/src``` dans votre éditeur de code. A l' intérieur, i
 
 Ouvrez le fichier `src/pages/index.js`. Le code dans ce fichier crée un composant qui contient un seul div et du texte - «Hello world!
 
+#### Modifier la page d'accueil «Hello World»
+1. Modifiez le texte «Hello World!» En «Hello Gatsby!» 
+2. Essayez de remplacer le code `src/pages/index.js` en donnant une couleur au texte et une taille de police plus grande. Vous pouvez le faire! C'est comme dans react(JSX).
+
+```JSX
+import React from "react"
+
+export default () => (
+  <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
+)```
+
 
 
 
