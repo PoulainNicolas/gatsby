@@ -121,6 +121,9 @@ Vous devriez maintenant voir le texte de votre en-tête «À propos de Gatsby»!
 ### Attends… t'es en train de faire un workshop react là???
 Non mon/ma cher(e)! Tu viens de prendre en main Gatsby et comme tu l'as constaté, Gatsby est basé sur react. Maintenant, tu vas voir toutes les merveilleuses possibilités qui s'offrent à toi grâce à Gatsby.
 
+Voyons maintenant un exemple avec l'utilisation de plugins de mise en page.
+
+
 
 
 
