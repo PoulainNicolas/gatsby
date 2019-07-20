@@ -30,14 +30,61 @@ Ouvrez le fichier `src/pages/index.js`. Le code dans ce fichier crée un composa
 
 #### Modifier la page d'accueil «Hello World»
 1. Modifiez le texte «Hello World!» En «Hello Gatsby!» 
-2. Essayez de remplacer le code `src/pages/index.js` en donnant une couleur au texte et une taille de police plus grande. Vous pouvez le faire! C'est comme dans react(JSX).
+2. Essayez de remplacer le code `src/pages/index.js` en donnant une couleur au texte et une taille de police plus grande **SANS REGARDER LA RÉPONSE!!!** Vous pouvez le faire! C'est comme dans react(JSX).
 
 ```JSX
 import React from "react"
 
 export default () => (
   <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
-)```
+)
+```
+3. Supprimez le style de la taille de la police, remplacez le texte «Hello Gatsby!» par un h1 et ajoutez un paragraphe sous l'en-tête.
+```JSX
+import React from "react"
+
+export default () => (
+  <div style={{ color: `purple` }}>
+    <h1>Hello Gatsby!</h1>
+    <p>Ton paragraphe.</p>
+  </div>
+)
+```
+4. Ajouter une image. (ici, une image aléatoire de Unsplash mais tu mets celle que tu veux).
+```JSX
+import React from "react"
+export default () => (
+  <div style={{ color: `purple` }}>
+    <h1>Hello Gatsby!</h1>
+    <p>Ton paragraphe.</p>
+    <img src="https://source.unsplash.com/random/400x200" alt="" />
+  </div>
+)
+```
+### Utilisation des composants
+Tout composant React défini dans `src/pages/*.js` deviendra automatiquement une page. Voyons cela en action.
+
+Vous avez déjà un fichier `src/pages/index.js` fourni avec le starter «Hello World». Créons une page à propos.
+1. Créez un nouveau fichier `src/pages/about.js`, copiez le code suivant dans le nouveau fichier et enregistrez.
+```JSX
+import React from "react"
+
+export default () => (
+  <div style={{ color: `teal` }}>
+    <h1>About Gatsby</h1>
+    <p>Such wow. Very React.</p>
+  </div>
+)
+```
+2. Allez voir voir votre page créée sur localhost:8000/about
+
+### Utilisation de sous composants
+Supposons que la page d'accueil et la page à propos soient devenues assez grandes et que vous réécriviez beaucoup de choses. Vous pouvez utiliser des sous-composants pour diviser l'interface utilisateur en éléments réutilisables. Vos deux pages ont des en-têtes <h1> - créez alors un composant qui décrira a Header.
+1. Créez un nouveau répertoire `src/components` et un fichier dans ce répertoire appelé `header.js`.
+  
+  
+### Attends… HTML dans notre JavaScript? T'es en train de faire un workshop react là???
+Non mon/ma cher(e)! Tu viens de prendre en main Gatsby et comme tu l'as constaté, Gatsby est basé sur react. Maintenant, tu vas voir toutes les merveilleuses possibilités qui s'offrent à toi grâce à Gatsby.
 
 
 
