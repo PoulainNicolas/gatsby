@@ -79,11 +79,46 @@ export default () => (
 2. Allez voir voir votre page créée sur localhost:8000/about
 
 ### Utilisation de sous composants
-Supposons que la page d'accueil et la page à propos soient devenues assez grandes et que vous réécriviez beaucoup de choses. Vous pouvez utiliser des sous-composants pour diviser l'interface utilisateur en éléments réutilisables. Vos deux pages ont des en-têtes <h1> - créez alors un composant qui décrira a Header.
+Supposons que la page d'accueil et la page à propos soient devenues assez grandes et que vous réécriviez beaucoup de choses. Vous pouvez utiliser des sous-composants pour diviser l'interface utilisateur en éléments réutilisables. Vos deux pages ont des en-têtes `<h1>`. Tu peux créer alors un composant qui décrira un Header.
 1. Créez un nouveau répertoire `src/components` et un fichier dans ce répertoire appelé `header.js`.
+2. Ajoutez le code suivant au nouveau fichier `src/components/header.js`.
+```JSX
+import React from "react"
+
+export default () => <h1>Ceci est un header.</h1>
+```
+3. Modifiez le fichier `about.js` pour importer le composant Header. Remplacez la balise `<h1>` par `<Header />`.
+```JSX
+import React from "react"
+import Header from "../components/header"
+export default () => (
+  <div style={{ color: `teal` }}>
+    <Header />
+    <p>Tu peux mettre un paragraphe.</p>
+  </div>
+)
+```
+4. Revenez à `src/components/header.js` et apportez les modifications suivantes:
+```JSX
+import React from "react"
+
+export default props => <h1>{props.headerText}</h1>
+```
+5. Revenez à `src/pages/about.js` et apportez les modifications suivantes:
+```JSX
+import React from "react"
+import Header from "../components/header"
+
+export default () => (
+  <div style={{ color: `teal` }}>
+    <Header headerText="À propos de Gatsby" />
+    <p>Tu peux mettre un paragraphe</p>
+  </div>
+)
+```
+Vous devriez maintenant voir le texte de votre en-tête «À propos de Gatsby»!
   
-  
-### Attends… HTML dans notre JavaScript? T'es en train de faire un workshop react là???
+### Attends… t'es en train de faire un workshop react là???
 Non mon/ma cher(e)! Tu viens de prendre en main Gatsby et comme tu l'as constaté, Gatsby est basé sur react. Maintenant, tu vas voir toutes les merveilleuses possibilités qui s'offrent à toi grâce à Gatsby.
 
 
