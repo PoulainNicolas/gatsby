@@ -20,3 +20,5 @@ Le workshop se divise en 6 parties. Vous devez évidemment commencer par la prem
 Dans chacune des parties vous trouverez absolument toutes les infos pour arriver au bout de ce workshop. Je ne ferai donc pas de démo live. Vous n'avez qu'à vous laisser guider et tout devrait bien se passer. Vous verrez que j'ai mis tous les codes nécessaires à la réalisation des différentes petites tâches qui vous attendent. Vous pouvez évidemment copier/coller. Je pense toutefois que vous auriez tout intérêt à bien lire le code et à essayer de le comprendre. Sinon ça ne sert à rien. Si vous avez des questions, demandez à votre voisin(e) ou appelez-moi. 
 
 Bon amusement ;-)
+
+[01. Les blocs de construction](https://github.com/PoulainNicolas/gatsby/blob/master/01.Les%20blocs%20de%20construction.md)
